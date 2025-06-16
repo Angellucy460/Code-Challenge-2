@@ -1,0 +1,96 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: greenyellow;
+    margin: 40px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: black;
+    margin-bottom: 24px;
+}
+
+form {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 24px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 8px 16px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: black;
+}
+
+#guest-list {
+    list-style: none;
+    padding: 0;
+    width: 300px;
+}
+
+#guest-list li {
+    background: blanchedalmond;
+    margin-bottom: 8px;
+    padding: 10px 16px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.guest-entry {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Style the button group together */
+.guest-entry .buttons {
+  display: flex;
+  gap: 8px;
+}
+
+/* Style each button consistently */
+.guest-entry button {
+  padding: 4px 10px;
+  border-radius: 4px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.guest-entry button:hover {
+  background-color: #0056b3;
+}
+
+/* Timestamp spaced to the far end */
+.guest-entry .time {
+  margin-left: auto;
+  font-style: italic;
+  font-size: 0.85em;
+  color: #333;
+}

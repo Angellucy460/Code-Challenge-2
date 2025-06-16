@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest List Manager</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="container">
+    <h1>Event Guest List</h1>
+    <form id="guest-form" autocomplete="off">
+        <input 
+            type="text" 
+            id="guest-name" 
+            class="guest-input"
+            placeholder="Enter guest's name" 
+            required
+        >
+        <button type="submit" class="add-btn">Add Guest</button>
+    </form>
+    <ul id="guest-list" class="guest-list"></ul>
+    <script src="./index.js"></script>
+</body>
+</html>
